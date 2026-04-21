@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince T Philip - CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #525659;
+            margin: 0;
+            padding: 40px 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .cv-container {
+            width: 794px;
+            /* A4 Width */
+            min-height: 1123px;
+            /* A4 Height */
+            background-color: #ffffff;
+            margin: 0 auto;
+            display: flex;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        /* --- Left Sidebar Styles --- */
+        .sidebar {
+            width: 35%;
+            background-color: #1b3556;
+            color: #ffffff;
+            padding: 0 30px 40px 30px;
+            box-sizing: border-box;
+        }
+
+        .profile-img-box {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #ffffff;
+        }
+
+        .sidebar-heading {
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-top: 35px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .sidebar-hr {
+            border: none;
+            border-bottom: 1.5px solid #ffffff;
+            margin-top: 0;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .contact-list li {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 18px;
+        }
+
+        .contact-list i {
+            margin-top: 2px;
+            margin-right: 12px;
+            font-size: 14px;
+            width: 14px;
+            text-align: center;
+        }
+
+        .contact-list span {
+            word-break: break-word;
+        }
+
+        .personal-details {
+            font-size: 12px;
+            line-height: 2;
+        }
+
+        .personal-details p {
+            margin: 0 0 6px 0;
+        }
+
+        .skills-list,
+        .lang-list {
+            padding-left: 20px;
+            margin: 0;
+            font-size: 12px;
+            line-height: 1.8;
+        }
+
+        .skills-list li,
+        .lang-list li {
+            margin-bottom: 8px;
+        }
+
+        /* --- Right Content Styles --- */
+        .content {
+            width: 65%;
+            padding: 50px 40px 50px 40px;
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+
+        .main-name {
+            font-size: 42px;
+            margin: 0 0 5px 0;
+            line-height: 1;
+        }
+
+        .main-name span.first {
+            font-weight: 800;
+            color: #4b5563;
+        }
+
+        .main-name span.last {
+            font-weight: 300;
+            color: #1b3556;
+        }
+
+        .subtitle {
+            color: #1b3556;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            display: inline-block;
+            border-bottom: 2px solid #1b3556;
+            padding-bottom: 5px;
+            margin-top: 5px;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1b3556;
+            letter-spacing: 2px;
+            margin-top: 25px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .content-hr {
+            border: none;
+            border-bottom: 1.5px solid #1b3556;
+            margin-top: 0;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .content-text {
+            color: #4b5563;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 18px;
+            color: #4b5563;
+            line-height: 1.5;
+            font-size: 13px;
+        }
+
+        .edu-desc {
+            flex: 1;
+        }
+
+        .edu-title {
+            font-weight: 700;
+            color: #4b5563;
+            margin-bottom: 6px;
+        }
+
+        .edu-year {
+            flex-shrink: 0;
+            display: flex;
+            align-items: flex-end;
+            margin-left: 20px;
+        }
+
+        .clinical-list {
+            padding-left: 15px;
+            margin-top: 8px;
+            margin-bottom: 0;
+            font-size: 13px;
+            color: #4b5563;
+        }
+
+        .clinical-list-item {
+            margin-bottom: 4px;
+        }
+
+        .declaration-name {
+            text-align: right;
+            margin-top: 40px;
+            color: #4b5563;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cv-container">
+
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+
+            <div class="profile-img-box">
+                <img src="prince.jpeg" alt="Prince T Philip" class="profile-img">
+            </div>
+
+            <div class="sidebar-heading">CONTACT</div>
+            <hr class="sidebar-hr">
+            <ul class="contact-list">
+                <li><i class="fa-solid fa-phone"></i> <span>+91 8590878809</span></li>
+                <li><i class="fa-solid fa-envelope"></i> <span>princetphilip54@gmail.com</span></li>
+                <li><i class="fa-solid fa-location-dot"></i> <span>Thalakkottu House<br>Kanakappalam PO Erumely<br>pin
+                        code -686509</span></li>
+            </ul>
+
+            <div class="sidebar-heading">PERSONAL<br>DETAILS</div>
+            <hr class="sidebar-hr">
+            <div class="personal-details">
+                <p>date of birth - 20/02/2004</p>
+                <p>sex - Male</p>
+                <p>Marital status - Single</p>
+                <p>Father's Name - Philip Cherian</p>
+                <p>Nationality - Indian</p>
+                <p>Religion - Christian</p>
+            </div>
+
+            <div class="sidebar-heading">SKILLS</div>
+            <hr class="sidebar-hr">
+            <ul class="skills-list">
+                <li>Rapid assesment & Emergency response</li>
+                <li>Patient stabilization</li>
+                <li>first aid Management</li>
+                <li>intravenous cannulation & injections</li>
+                <li>RT insertion</li>
+                <li>Communication and teamwork skills</li>
+                <li>Computer proficiency:EMR Microsoft</li>
+                <li>Infection control and safety procedures</li>
+            </ul>
+
+            <div class="sidebar-heading">LANGUAGES</div>
+            <hr class="sidebar-hr">
+            <ul class="lang-list">
+                <li>English</li>
+                <li>Malayalam</li>
+                <li>Hindi (Basics)</li>
+            </ul>
+
+        </div>
+
+        <!-- Right Content -->
+        <div class="content">
+
+            <h1 class="main-name"><span class="first">PRINCE</span> <span class="last">T PHILIP</span></h1>
+            <div class="subtitle">STAFF NURSE</div>
+
+            <div class="section-title">PROFILE</div>
+            <hr class="content-hr">
+            <div class="content-text">
+                As a graduate, I am seeking a role which allows me to continue learning and perfecting my nursing skills
+                as I provide high quality work and encourages me to do patient care in all levels.
+            </div>
+
+            <div class="section-title">EDUCATIONAL ATTAINMENT</div>
+            <hr class="content-hr">
+
+            <div class="edu-item">
+                <div class="edu-desc">
+                    <div class="edu-title">Bsc Nursing</div>
+                    St.Thomas College of Nursing Kattanam<br>
+                    Kerala University of Health Science<br>
+
+                </div>
+                <div class="edu-year">
+                    2021-2025
+                </div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-desc">
+                    <div class="edu-title">Higher Secondary</div>
+                    St. Thomas Higher Secondary School Erumely<br>
+                    Board: Kerala Board<br>
+                    Percentage: 80.16%
+                </div>
+                <div class="edu-year">2019-21</div>
+            </div>
+
+            <div class="edu-item">
+                <div class="edu-desc">
+                    <div class="edu-title">SSLC</div>
+                    St.Thomas Higher Secondary School Erumely<br>
+                    Board: Kerala Board<br>
+                    Percentage: 83%
+                </div>
+                <div class="edu-year">2019</div>
+            </div>
+
+            <div class="section-title">CLINICAL EXPERIENCE<br>(AS STUDENT INTERN)</div>
+            <hr class="content-hr">
+            <div class="content-text">
+                <ul>
+                    <!-- <li>Clinical experience as a student intern in: -->
+                    <ol class="clinical-list">
+                        <li class="clinical-list-item">St. Thomas Mission Hospital, Kattanam</li>
+                        <li class="clinical-list-item">Govt Taluk Hospital, Kayamkulam</li>
+                        <li class="clinical-list-item">St. Gregorios Hospital, Parumala</li>
+                        <li class="clinical-list-item">Life Line Hospital, Adoor</li>
+                        <li class="clinical-list-item">Sanjivani Hospital, Kollakadavu</li>
+                        <li class="clinical-list-item">Ebenezer Hospital, Kayamkulam</li>
+                        <li class="clinical-list-item">KCM Hospital, Nooranad</li>
+                        <li class="clinical-list-item">CHC Chunakkara</li>
+                    </ol>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-title">REFERENCE</div>
+            <hr class="content-hr">
+            <div class="content-text">
+                Prof Dr. Nahomi Clement <br> Principal <br>St.Thomas College of Nursing Kattanam. <br>
+                Ph +91 83010 13788
+            </div>
+
+            <div class="section-title">DECLARATION</div>
+            <hr class="content-hr">
+            <div class="content-text" style="margin-bottom: 0;">
+                I hereby declare that the informations provided in this resume is true and accurate to the best of my
+                knowledge and belief.
+            </div>
+            <div class="declaration-name">
+                PRINCE T PHILIP
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
