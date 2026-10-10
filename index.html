@@ -347,78 +347,103 @@
 }
 
 
-        /* Final right-column typography adjustments */
-        .content {
-            font-size: 16px;
-            line-height: 1.55;
-            padding-top: 48px;
-            padding-bottom: 42px;
-        }
+/* --- Right Content: Slightly Larger A4 Typography --- */
+.content {
+    width: 65%;
+    padding: 30px 30px 26px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 1.4;
+}
 
-        .main-name {
-            font-size: 38px;
-            line-height: 1.12;
-            margin-bottom: 8px;
-        }
+/* Name */
+.main-name {
+    font-size: 32px;
+    line-height: 1.1;
+    margin: 0 0 5px;
+    white-space: nowrap;
+}
 
-        .subtitle {
-            font-size: 19px;
-            margin-bottom: 26px;
-        }
+/* Job Title */
+.subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 3px;
+    margin: 3px 0 14px;
+}
 
-        .section-title {
-            font-size: 19px;
-            line-height: 1.3;
-            letter-spacing: 1.5px;
-            margin-top: 22px;
-            margin-bottom: 6px;
-        }
+/* Section Headings */
+.section-title {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin: 13px 0 4px;
+}
 
-        .content-hr {
-            margin-bottom: 12px;
-        }
+/* Section Divider */
+.content-hr {
+    margin: 0 0 8px;
+}
 
-        .content-text {
-            font-size: 16px;
-            line-height: 1.65;
-            margin-bottom: 20px;
-        }
+/* Profile, Reference and Declaration */
+.content-text {
+    font-size: 16px;
+    line-height: 1.45;
+    margin: 0 0 11px;
+    text-align: justify;
+}
 
-        .edu-item {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 16px;
-        }
+/* Education */
+.edu-item {
+    gap: 6px;
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 1.4;
+}
 
-        .edu-desc {
-            font-size: 16px;
-            line-height: 1.6;
-        }
+.edu-desc {
+    font-size: 16px;
+    line-height: 1.4;
+}
 
-        .edu-title {
-            font-size: 17px;
-            margin-bottom: 4px;
-        }
+.edu-title {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
 
-        .edu-year {
-            font-size: 15px;
-            margin-left: 12px;
-        }
+.edu-year {
+    font-size: 16px;
+    margin-left: 4px;
+}
 
-        .clinical-list {
-            font-size: 16px;
-            line-height: 1.65;
-        }
+/* Clinical Experience */
+.clinical-list {
+    padding-left: 18px;
+    margin: 3px 0 0;
+    font-size: 15px;
+    line-height: 1.4;
+}
 
-        .clinical-list-item {
-            font-size: 16px;
-            line-height: 1.65;
-        }
+.clinical-list-item {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 2px;
+}
 
-        .declaration-name {
-            font-size: 16px;
-            margin-top: 24px;
-        }
+/* Clinical List Spacing */
+.content-text:has(.clinical-list) {
+    margin-bottom: 7px;
+}
+
+/* Declaration Signature */
+.declaration-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 12px;
+}
 
     </style>
 </head>
